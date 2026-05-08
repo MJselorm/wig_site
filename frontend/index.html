@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIGS - Fashion Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span class="dropdown">English <i class="fas fa-angle-down"></i></span>
+                <span class="dropdown">$ USD <i class="fas fa-angle-down"></i></span>
+            </div>
+            <div class="top-bar-right">
+                <a href="dashboard.html">My Account</a>
+                <span class="separator">|</span>
+                <a href="#">My Wishlist</a>
+                <span class="separator">|</span>
+                <a href="#">Checkout</a>
+                <span class="separator">|</span>
+                <a href="login.html" id="top-login-link">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="index.html" class="logo">WIGS<span class="logo-dot"></span></a>
+            </div>
+            <div class="search-area">
+                <div class="search-box">
+                    <div class="category-select">
+                        All category <i class="fas fa-angle-down"></i>
+                    </div>
+                    <input type="text" placeholder="Search">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="action-area">
+                <a href="login.html" class="icon-box" id="profile-btn"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon-box cart-box">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <ul class="main-menu">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">WIGS</a></li>
+                <li><a href="#">HAIR BUNDLES</a></li>
+                <li><a href="#">NEW ARRIVALS</a></li>
+                <li><a href="#">SALE</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+            <div class="hotline">
+                HOTLINE: <span class="hotline-number">(64) 888 999 123</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Slider Section -->
+        <section class="hero-section">
+            <div class="slider-container" id="hero-slider-container">
+                <div class="slider-wrapper" id="hero-slider">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <div class="slide-bg slide-bg-1">
+                            <div class="hero-content">
+                                <span class="hero-label">SHOP DEALS</span>
+                                <h1 class="hero-title">BIG SALE THIS WEEK</h1>
+                                <p class="hero-subtitle">buy 1 get 3 and more</p>
+                                <button class="hero-btn">CHECK IT OUT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="slide-bg slide-bg-2">
+                            <div class="hero-content">
+                                <span class="hero-label">NEW ARRIVALS</span>
+                                <h1 class="hero-title">SPRING COLLECTION</h1>
+                                <p class="hero-subtitle">up to 40% off selected items</p>
+                                <button class="hero-btn">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="slider-nav prev-btn" id="slider-prev"><i class="fas fa-angle-left"></i></button>
+                <button class="slider-nav next-btn" id="slider-next"><i class="fas fa-angle-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Product Tabs Section -->
+        <section class="product-tabs-section">
+            <div class="tabs-header">
+                <button class="tab-btn active">FEATURED</button>
+                <button class="tab-btn">BEST SELLER</button>
+                <button class="tab-btn">TOP RATED</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="assets/hero.png" alt="Product">
+                    </div>
+                    <div class="product-details">
+                        <h3>Auburn Crochet Wig</h3>
+                        <div class="price">$120.00</div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="assets/cat1.png" alt="Product">
+                    </div>
+                    <div class="product-details">
+                        <h3>Straight M-Cap</h3>
+                        <div class="price">$145.00</div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="assets/cat2.png" alt="Product">
+                    </div>
+                    <div class="product-details">
+                        <h3>Curly Half Wig</h3>
+                        <div class="price">$89.00</div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="assets/cat3.png" alt="Product">
+                    </div>
+                    <div class="product-details">
+                        <h3>Reddish Brown Curls</h3>
+                        <div class="price">$115.00</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
