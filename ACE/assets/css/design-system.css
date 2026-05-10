@@ -1,0 +1,314 @@
+/* ============================================================
+   MAISON CRÈME — Design System Tokens
+   Extracted from Google Stitch Project #390515253951647979
+   ============================================================ */
+
+/* — Google Fonts ------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* — CSS Custom Properties ---------------------------------- */
+:root {
+  /* ── Color Palette ──────────────────────────────────────── */
+  /* Primary Canvas */
+  --color-bone:              #F5F5F2;
+  --color-bone-warm:         #FAF8F5;
+  
+  /* Structural */
+  --color-charcoal:          #1A1A1A;
+  --color-charcoal-soft:     #2C2C2C;
+  --color-charcoal-hover:    #333333;
+  
+  /* Accent */
+  --color-gold:              #D4AF37;
+  --color-gold-light:        #E8CC6E;
+  --color-gold-dark:         #B8941E;
+  
+  /* Neutrals */
+  --color-grey-subtle:       #E5E5E1;
+  --color-grey-mid:          #C4C7C7;
+  --color-grey-dark:         #747878;
+  --color-white:             #FFFFFF;
+  
+  /* Material Design Surface Tokens (from Stitch) */
+  --surface:                 #FBF9F9;
+  --surface-bright:          #FBF9F9;
+  --surface-dim:             #DBDAD9;
+  --surface-container-lowest:#FFFFFF;
+  --surface-container-low:   #F5F3F3;
+  --surface-container:       #EFEDED;
+  --surface-container-high:  #E9E8E7;
+  --surface-container-highest:#E3E2E2;
+  --surface-variant:         #E3E2E2;
+  
+  /* On-Surface */
+  --on-surface:              #1B1C1C;
+  --on-surface-variant:      #444748;
+  --inverse-surface:         #303031;
+  --inverse-on-surface:      #F2F0F0;
+  
+  /* Outline */
+  --outline:                 #747878;
+  --outline-variant:         #C4C7C7;
+  
+  /* Semantic */
+  --color-error:             #BA1A1A;
+  --color-error-container:   #FFDAD6;
+  --on-error:                #FFFFFF;
+  --color-success:           #2E7D32;
+  
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-display:            'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body:               'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Display Large */
+  --display-lg-size:         64px;
+  --display-lg-weight:       400;
+  --display-lg-height:       1.1;
+  --display-lg-spacing:      -0.02em;
+  
+  /* Display Large Mobile */
+  --display-lg-mobile-size:  40px;
+  --display-lg-mobile-weight:400;
+  --display-lg-mobile-height:1.2;
+  --display-lg-mobile-spacing:-0.01em;
+  
+  /* Headline Medium */
+  --headline-md-size:        32px;
+  --headline-md-weight:      400;
+  --headline-md-height:      1.3;
+  --headline-md-spacing:     0em;
+  
+  /* Headline Small */
+  --headline-sm-size:        24px;
+  --headline-sm-weight:      400;
+  --headline-sm-height:      1.4;
+  --headline-sm-spacing:     0em;
+  
+  /* Body Large */
+  --body-lg-size:            18px;
+  --body-lg-weight:          300;
+  --body-lg-height:          1.6;
+  --body-lg-spacing:         0.01em;
+  
+  /* Body Medium */
+  --body-md-size:            16px;
+  --body-md-weight:          400;
+  --body-md-height:          1.6;
+  --body-md-spacing:         0.01em;
+  
+  /* Label Caps */
+  --label-caps-size:         12px;
+  --label-caps-weight:       600;
+  --label-caps-height:       1.0;
+  --label-caps-spacing:      0.15em;
+  
+  /* Button */
+  --button-size:             14px;
+  --button-weight:           500;
+  --button-height:           1.0;
+  --button-spacing:          0.1em;
+  
+  /* ── Spacing ────────────────────────────────────────────── */
+  --space-unit:              8px;
+  --space-xs:                4px;
+  --space-sm:                12px;
+  --space-md:                24px;
+  --space-lg:                48px;
+  --space-xl:                80px;
+  --space-2xl:               120px;
+  --space-3xl:               160px;
+  
+  /* Layout */
+  --container-max:           1440px;
+  --gutter:                  24px;
+  --margin-desktop:          64px;
+  --margin-mobile:           20px;
+  --columns:                 12;
+  
+  /* ── Shapes ─────────────────────────────────────────────── */
+  /* Sharp, rectilinear — architectural fashion aesthetic */
+  --radius-none:             0px;
+  --radius-subtle:           2px;  /* max for buttons/inputs */
+  
+  /* ── Transitions ────────────────────────────────────────── */
+  --ease-smooth:             cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-out:                cubic-bezier(0, 0, 0.2, 1);
+  --ease-in:                 cubic-bezier(0.4, 0, 1, 1);
+  --duration-fast:           150ms;
+  --duration-normal:         300ms;
+  --duration-slow:           500ms;
+  --duration-reveal:         800ms;
+  
+  /* ── Z-Index Scale ──────────────────────────────────────── */
+  --z-base:                  1;
+  --z-dropdown:              100;
+  --z-sticky:                200;
+  --z-overlay:               300;
+  --z-modal:                 400;
+  --z-toast:                 500;
+}
+
+
+/* ============================================================
+   CSS Reset — Luxury Minimalist
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--body-md-size);
+  font-weight: var(--body-md-weight);
+  line-height: var(--body-md-height);
+  letter-spacing: var(--body-md-spacing);
+  color: var(--on-surface);
+  background-color: var(--color-bone);
+  overflow-x: hidden;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+
+/* ============================================================
+   Typography Utility Classes
+   ============================================================ */
+
+.display-lg {
+  font-family: var(--font-display);
+  font-size: var(--display-lg-size);
+  font-weight: var(--display-lg-weight);
+  line-height: var(--display-lg-height);
+  letter-spacing: var(--display-lg-spacing);
+}
+
+.headline-md {
+  font-family: var(--font-display);
+  font-size: var(--headline-md-size);
+  font-weight: var(--headline-md-weight);
+  line-height: var(--headline-md-height);
+  letter-spacing: var(--headline-md-spacing);
+}
+
+.headline-sm {
+  font-family: var(--font-display);
+  font-size: var(--headline-sm-size);
+  font-weight: var(--headline-sm-weight);
+  line-height: var(--headline-sm-height);
+  letter-spacing: var(--headline-sm-spacing);
+}
+
+.body-lg {
+  font-family: var(--font-body);
+  font-size: var(--body-lg-size);
+  font-weight: var(--body-lg-weight);
+  line-height: var(--body-lg-height);
+  letter-spacing: var(--body-lg-spacing);
+}
+
+.body-md {
+  font-family: var(--font-body);
+  font-size: var(--body-md-size);
+  font-weight: var(--body-md-weight);
+  line-height: var(--body-md-height);
+  letter-spacing: var(--body-md-spacing);
+}
+
+.label-caps {
+  font-family: var(--font-body);
+  font-size: var(--label-caps-size);
+  font-weight: var(--label-caps-weight);
+  line-height: var(--label-caps-height);
+  letter-spacing: var(--label-caps-spacing);
+  text-transform: uppercase;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-charcoal {
+  color: var(--color-charcoal);
+}
+
+.text-grey {
+  color: var(--color-grey-dark);
+}
+
+
+/* ============================================================
+   Selection & Scrollbar
+   ============================================================ */
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bone);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey-mid);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-grey-dark);
+}

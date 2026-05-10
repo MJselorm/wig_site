@@ -1,0 +1,187 @@
+/* ============================================================
+   MAISON CRÈME — Layout System
+   12-column grid, containers, responsive breakpoints
+   ============================================================ */
+
+/* ── Container ───────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--margin-desktop);
+}
+
+.container-narrow {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--margin-desktop);
+}
+
+.container-wide {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--margin-desktop);
+}
+
+.container-full {
+  width: 100%;
+  padding: 0;
+}
+
+/* ── Grid System ─────────────────────────────────────────── */
+.grid {
+  display: grid;
+  gap: var(--gutter);
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.grid-2-1 { grid-template-columns: 2fr 1fr; }
+.grid-1-2 { grid-template-columns: 1fr 2fr; }
+.grid-1-1 { grid-template-columns: 1fr 1fr; }
+
+/* ── Section Spacing ─────────────────────────────────────── */
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.section-lg {
+  padding: var(--space-2xl) 0;
+}
+
+.section-xl {
+  padding: var(--space-3xl) 0;
+}
+
+/* ── Flex Utilities ──────────────────────────────────────── */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-end { justify-content: flex-end; }
+.gap-xs { gap: var(--space-xs); }
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+
+/* ── Spacing Utilities ───────────────────────────────────── */
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+.pt-md { padding-top: var(--space-md); }
+.pt-lg { padding-top: var(--space-lg); }
+.pb-md { padding-bottom: var(--space-md); }
+.pb-lg { padding-bottom: var(--space-lg); }
+
+/* ── Text Utilities ──────────────────────────────────────── */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* ── Visibility ──────────────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Main Content Offset (for fixed header) ──────────────── */
+.main-content {
+  padding-top: 80px; /* nav height */
+}
+
+.main-content-with-bar {
+  padding-top: 120px; /* nav + announcement */
+}
+
+/* ── Full-bleed Hero ─────────────────────────────────────── */
+.hero-full {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-half {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Aspect Ratios ───────────────────────────────────────── */
+.aspect-3-4 { aspect-ratio: 3 / 4; }
+.aspect-4-3 { aspect-ratio: 4 / 3; }
+.aspect-1-1 { aspect-ratio: 1 / 1; }
+.aspect-16-9 { aspect-ratio: 16 / 9; }
+
+/* ============================================================
+   Responsive Breakpoints
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  :root {
+    --margin-desktop: 40px;
+  }
+  .nav-links { display: none; }
+  .nav-mobile-toggle { display: flex; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-full { min-height: 80vh; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --margin-desktop: var(--margin-mobile);
+  }
+  .display-lg {
+    font-size: var(--display-lg-mobile-size);
+    letter-spacing: var(--display-lg-mobile-spacing);
+    line-height: var(--display-lg-mobile-height);
+  }
+  .headline-md { font-size: 26px; }
+  .headline-sm { font-size: 20px; }
+  .grid-2,
+  .grid-3,
+  .grid-4 { grid-template-columns: 1fr; }
+  .grid-2-1,
+  .grid-1-2 { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .section { padding: var(--space-lg) 0; }
+  .section-lg { padding: var(--space-xl) 0; }
+  .nav-container { padding: 0 var(--margin-mobile); height: 64px; }
+  .main-content { padding-top: 64px; }
+  .main-content-with-bar { padding-top: 104px; }
+  .hero-full { min-height: 70vh; }
+  .newsletter-input-group { flex-direction: column; }
+  .newsletter-input-group input { border-right: 1px solid var(--color-charcoal); }
+  .container-narrow { padding: 0 var(--margin-mobile); }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .btn-lg { padding: 16px 32px; font-size: 13px; }
+  .nav-logo { font-size: 18px; }
+}

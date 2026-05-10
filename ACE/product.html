@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Silk Press Unit | MAISON CRÈME</title>
+  <meta name="description" content="The Silk Press Unit — a masterpiece of hand-tied craftsmanship. 100% virgin hair, Swiss lace front, natural hairline. Available in multiple lengths and densities.">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages/product.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">Complimentary Shipping on Orders Over <span>$350</span> &mdash; Handcrafted with Intention</div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">Maison <span>Crème</span></a>
+      <ul class="nav-links">
+        <li><a href="collection.html" class="nav-link">Collections</a></li>
+        <li><a href="collection.html?cat=lace-front" class="nav-link">Lace Fronts</a></li>
+        <li><a href="collection.html?cat=bundles" class="nav-link">Bundles</a></li>
+        <li><a href="about.html" class="nav-link">Our Process</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-action-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="nav-action-btn" id="cart-btn" aria-label="Shopping bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cart-count" style="display:none;">0</span>
+        </button>
+        <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close">&times;</button>
+    <a href="collection.html">Collections</a>
+    <a href="collection.html?cat=lace-front">Lace Fronts</a>
+    <a href="about.html">Our Process</a>
+  </div>
+
+  <main class="main-content-with-bar">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs pdp-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="separator">›</span>
+        <a href="collection.html">Collections</a>
+        <span class="separator">›</span>
+        <span>The Silk Press Unit</span>
+      </div>
+
+      <!-- PDP Layout -->
+      <div class="pdp-layout">
+        <!-- Gallery -->
+        <div class="pdp-gallery reveal-left">
+          <div class="pdp-main-image" id="pdp-main-image">
+            <img src="assets/images/product-lace-front.png" alt="The Silk Press Unit - Front View" id="pdp-main-img">
+          </div>
+          <div class="pdp-thumbnails">
+            <button class="pdp-thumb active" data-img="assets/images/product-lace-front.png">
+              <img src="assets/images/product-lace-front.png" alt="Front View">
+            </button>
+            <button class="pdp-thumb" data-img="assets/images/product-body-wave.png">
+              <img src="assets/images/product-body-wave.png" alt="Side View">
+            </button>
+            <button class="pdp-thumb" data-img="assets/images/hero-main.png">
+              <img src="assets/images/hero-main.png" alt="Model View">
+            </button>
+            <button class="pdp-thumb" data-img="assets/images/lifestyle-editorial.png">
+              <img src="assets/images/lifestyle-editorial.png" alt="Detail View">
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="pdp-info reveal-right">
+          <div style="display:flex;gap:8px;margin-bottom:var(--space-sm);">
+            <span class="chip chip-new">New Arrival</span>
+            <span class="chip">In Stock</span>
+          </div>
+
+          <h1 class="pdp-title">The Silk Press Unit</h1>
+          <div class="pdp-price">$485.00</div>
+          <p class="pdp-description">
+            A masterpiece of hand-tied craftsmanship. This full lace unit features a pre-plucked natural hairline,
+            baby hairs, and a silk press finish that mimics freshly straightened natural hair. Each knot is bleached
+            by hand for an invisible, undetectable installation.
+          </p>
+
+          <!-- Length Variant -->
+          <div class="pdp-variant-group">
+            <span class="pdp-variant-label">Length</span>
+            <div class="pdp-variant-options" id="length-options">
+              <button class="pdp-variant-btn" data-value="14">14"</button>
+              <button class="pdp-variant-btn active" data-value="18">18"</button>
+              <button class="pdp-variant-btn" data-value="22">22"</button>
+              <button class="pdp-variant-btn" data-value="26">26"</button>
+            </div>
+          </div>
+
+          <!-- Density Variant -->
+          <div class="pdp-variant-group">
+            <span class="pdp-variant-label">Density</span>
+            <div class="pdp-variant-options" id="density-options">
+              <button class="pdp-variant-btn" data-value="130">130%</button>
+              <button class="pdp-variant-btn active" data-value="150">150%</button>
+              <button class="pdp-variant-btn" data-value="180">180%</button>
+            </div>
+          </div>
+
+          <!-- Color Variant -->
+          <div class="pdp-variant-group">
+            <span class="pdp-variant-label">Color</span>
+            <div class="pdp-variant-options" id="color-options">
+              <button class="pdp-variant-btn active" data-value="natural-black">Natural Black</button>
+              <button class="pdp-variant-btn" data-value="dark-brown">Dark Brown</button>
+              <button class="pdp-variant-btn" data-value="honey-blonde">Honey Blonde</button>
+            </div>
+          </div>
+
+          <!-- Add to Cart -->
+          <div class="pdp-add-to-cart">
+            <div class="qty-selector">
+              <button class="qty-btn" id="qty-minus">−</button>
+              <div class="qty-value" id="qty-value">1</div>
+              <button class="qty-btn" id="qty-plus">+</button>
+            </div>
+            <button class="btn btn-primary pdp-add-btn"
+                    id="add-to-cart-btn"
+                    data-add-to-cart
+                    data-product-id="silk-press-001"
+                    data-product-name="The Silk Press Unit"
+                    data-product-price="485"
+                    data-product-image="assets/images/product-lace-front.png"
+                    data-product-variant="18&quot; / 150% / Natural Black">
+              Add to Bag — $485.00
+            </button>
+          </div>
+
+          <!-- Accordion -->
+          <div class="pdp-accordion">
+            <div class="pdp-accordion-item open">
+              <button class="pdp-accordion-header">
+                Product Details
+                <span class="pdp-accordion-icon">+</span>
+              </button>
+              <div class="pdp-accordion-body">
+                <div class="pdp-accordion-content">
+                  <p><strong>Hair Type:</strong> 100% Virgin Human Hair</p>
+                  <p><strong>Texture:</strong> Silk Press / Bone Straight</p>
+                  <p><strong>Cap Construction:</strong> Full Lace with Swiss Lace Front</p>
+                  <p><strong>Hairline:</strong> Pre-plucked with Baby Hairs</p>
+                  <p><strong>Knots:</strong> Bleached & Single-Tied</p>
+                  <p><strong>Heat Safe:</strong> Up to 400°F</p>
+                </div>
+              </div>
+            </div>
+            <div class="pdp-accordion-item">
+              <button class="pdp-accordion-header">
+                Shipping & Returns
+                <span class="pdp-accordion-icon">+</span>
+              </button>
+              <div class="pdp-accordion-body">
+                <div class="pdp-accordion-content">
+                  <p>Complimentary shipping on orders over $350. Standard shipping (5-7 business days) is $15. Express shipping (2-3 business days) is $25.</p>
+                  <p>We accept returns within 14 days of delivery for unworn, unaltered units in original packaging. Custom orders are final sale.</p>
+                </div>
+              </div>
+            </div>
+            <div class="pdp-accordion-item">
+              <button class="pdp-accordion-header">
+                Care Instructions
+                <span class="pdp-accordion-icon">+</span>
+              </button>
+              <div class="pdp-accordion-body">
+                <div class="pdp-accordion-content">
+                  <p>Wash with sulfate-free shampoo every 7-10 wears. Deep condition bi-weekly. Air dry on a wig stand when not in use. Avoid sleeping in the unit to extend longevity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommendations -->
+      <section class="pdp-recommendations">
+        <div class="section-header reveal">
+          <span class="label-caps" style="color: var(--color-gold);">You May Also Like</span>
+          <h2 class="section-title">Complete Your Collection</h2>
+        </div>
+        <div class="grid grid-4">
+          <a href="product.html" class="product-card reveal reveal-delay-1">
+            <div class="product-card-image img-zoom">
+              <img src="assets/images/product-body-wave.png" alt="The Riviera Wave">
+            </div>
+            <div class="product-card-category">Body Wave</div>
+            <div class="product-card-name">The Riviera Wave</div>
+            <div class="product-card-price">$520.00</div>
+          </a>
+          <a href="product.html" class="product-card reveal reveal-delay-2">
+            <div class="product-card-image img-zoom">
+              <img src="assets/images/product-straight-bob.png" alt="The Parisian Bob">
+            </div>
+            <div class="product-card-category">Bob</div>
+            <div class="product-card-name">The Parisian Bob</div>
+            <div class="product-card-price">$395.00</div>
+          </a>
+          <a href="product.html" class="product-card reveal reveal-delay-3">
+            <div class="product-card-image img-zoom">
+              <img src="assets/images/hero-main.png" alt="The Monaco Straight">
+            </div>
+            <div class="product-card-category">Straight</div>
+            <div class="product-card-name">The Monaco Straight</div>
+            <div class="product-card-price">$450.00</div>
+          </a>
+          <a href="product.html" class="product-card reveal reveal-delay-4">
+            <div class="product-card-image img-zoom">
+              <img src="assets/images/product-lace-front.png" alt="The Opulence Unit">
+            </div>
+            <div class="product-card-category">Lace Front</div>
+            <div class="product-card-name">The Opulence Unit</div>
+            <div class="product-card-price">$545.00</div>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Maison Crème</div>
+          <p class="footer-brand-text">Luxury wigs and hairpieces, handcrafted with intention.</p>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-title">Shop</div>
+          <a href="collection.html">All Collections</a>
+          <a href="collection.html?cat=lace-front">Lace Fronts</a>
+          <a href="collection.html?cat=body-wave">Body Wave</a>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-title">Maison</div>
+          <a href="about.html">Our Process</a>
+          <a href="#">Wig Care Guide</a>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-title">Support</div>
+          <a href="#">Contact Us</a>
+          <a href="#">Shipping & Returns</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">&copy; 2026 Maison Crème. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title">Shopping Bag</span>
+      <button id="cart-close">&times;</button>
+    </div>
+    <div class="cart-drawer-body" id="cart-drawer-body">
+      <div class="cart-empty"><p class="headline-sm">Your bag is empty</p></div>
+    </div>
+    <div class="cart-drawer-footer" id="cart-drawer-footer" style="display:none;">
+      <div class="cart-subtotal">
+        <span class="label-caps">Subtotal</span>
+        <span id="cart-subtotal-amount">$0.00</span>
+      </div>
+      <a href="checkout.html" class="btn btn-primary" style="width:100%;">Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    // ── Thumbnail Gallery ──────────────────────────
+    document.querySelectorAll('.pdp-thumb').forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        document.querySelectorAll('.pdp-thumb').forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+        document.getElementById('pdp-main-img').src = thumb.dataset.img;
+      });
+    });
+
+    // ── Variant Selectors ──────────────────────────
+    document.querySelectorAll('.pdp-variant-options').forEach(group => {
+      group.querySelectorAll('.pdp-variant-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          group.querySelectorAll('.pdp-variant-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+    });
+
+    // ── Quantity ────────────────────────────────────
+    let qty = 1;
+    const qtyVal = document.getElementById('qty-value');
+    document.getElementById('qty-minus').addEventListener('click', () => {
+      if (qty > 1) { qty--; qtyVal.textContent = qty; }
+    });
+    document.getElementById('qty-plus').addEventListener('click', () => {
+      if (qty < 10) { qty++; qtyVal.textContent = qty; }
+    });
+
+    // ── Accordion ──────────────────────────────────
+    document.querySelectorAll('.pdp-accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        header.closest('.pdp-accordion-item').classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>

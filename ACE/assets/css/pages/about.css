@@ -1,0 +1,102 @@
+/* ============================================================
+   MAISON CRÈME — About / Process Page Styles
+   ============================================================ */
+.about-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-charcoal);
+  color: var(--color-bone);
+  padding: var(--space-2xl) var(--margin-desktop);
+}
+.about-hero-title {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+.about-hero-title em { font-style: italic; color: var(--color-gold); }
+.about-hero-subtitle {
+  font-size: var(--body-lg-size);
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(245,245,242,0.6);
+}
+/* Process Steps */
+.process-section { padding: var(--space-2xl) 0; }
+.process-step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+  padding: var(--space-xl) 0;
+}
+.process-step:nth-child(even) { direction: rtl; }
+.process-step:nth-child(even) > * { direction: ltr; }
+.process-step-image {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+.process-step-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.process-step-number {
+  font-family: var(--font-display);
+  font-size: 72px;
+  color: var(--color-grey-subtle);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+}
+.process-step-title {
+  font-family: var(--font-display);
+  font-size: var(--headline-md-size);
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-sm);
+}
+.process-step-text {
+  font-size: var(--body-lg-size);
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-grey-dark);
+}
+/* Values */
+.about-values {
+  padding: var(--space-2xl) 0;
+  background-color: var(--surface-container-low);
+}
+.about-value-card {
+  text-align: center;
+  padding: var(--space-lg);
+}
+.about-value-icon { font-size: 36px; margin-bottom: var(--space-md); }
+.about-value-title {
+  font-family: var(--font-display);
+  font-size: var(--headline-sm-size);
+  margin-bottom: var(--space-sm);
+}
+.about-value-text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-grey-dark);
+}
+/* CTA Banner */
+.about-cta {
+  padding: var(--space-2xl) 0;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .process-step { grid-template-columns: 1fr; gap: var(--space-lg); }
+  .process-step:nth-child(even) { direction: ltr; }
+  .about-hero-title { font-size: 40px; }
+}
+@media (max-width: 768px) {
+  .about-hero { min-height: 50vh; padding: var(--space-xl) var(--margin-mobile); }
+  .about-hero-title { font-size: 32px; }
+}

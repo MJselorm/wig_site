@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lace Front Wigs | MAISON CRÈME</title>
+  <meta name="description" content="Explore our curated collection of luxury lace front wigs. Hand-tied, ethically sourced virgin hair in a variety of textures, lengths, and densities.">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages/collection.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">Complimentary Shipping on Orders Over <span>$350</span> &mdash; Handcrafted with Intention</div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">Maison <span>Crème</span></a>
+      <ul class="nav-links">
+        <li><a href="collection.html" class="nav-link">Collections</a></li>
+        <li><a href="collection.html?cat=lace-front" class="nav-link">Lace Fronts</a></li>
+        <li><a href="collection.html?cat=bundles" class="nav-link">Bundles</a></li>
+        <li><a href="about.html" class="nav-link">Our Process</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-action-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="nav-action-btn" id="cart-btn" aria-label="Shopping bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cart-count" style="display:none;">0</span>
+        </button>
+        <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+    <a href="collection.html">Collections</a>
+    <a href="about.html">Our Process</a>
+  </div>
+
+  <main class="main-content-with-bar">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="separator">›</span>
+        <span>Collections</span>
+      </div>
+
+      <!-- Hero -->
+      <div class="collection-hero reveal">
+        <h1 class="collection-hero-title">The Collection</h1>
+        <p class="collection-hero-subtitle">Each piece is hand-tied by master artisans using 100% virgin hair. Browse our full range of luxury wigs and hairpieces.</p>
+      </div>
+
+      <!-- Toolbar -->
+      <div class="collection-toolbar">
+        <div class="collection-filter-group">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="lace-front">Lace Fronts</button>
+          <button class="filter-btn" data-filter="body-wave">Body Wave</button>
+          <button class="filter-btn" data-filter="straight">Straight</button>
+          <button class="filter-btn" data-filter="bob">Bob</button>
+        </div>
+        <div class="collection-sort">
+          <span class="collection-count" id="product-count">8 Products</span>
+          <span>·</span>
+          <label for="sort-select">Sort by</label>
+          <select id="sort-select">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="newest">Newest</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="collection-grid" id="product-grid">
+
+        <a href="product.html" class="product-card reveal" data-category="lace-front" data-price="485" data-date="2026-05">
+          <div class="product-card-image img-zoom">
+            <img src="assets/images/product-lace-front.png" alt="The Silk Press Unit">
+            <div class="product-card-overlay"><span class="btn btn-primary btn-sm">Quick View</span></div>
+          </div>
+          <span class="chip chip-new" style="margin-bottom: 6px;">New</span>
+          <div class="product-card-category">Lace Front</div>
+          <div class="product-card-name">The Silk Press Unit</div>
+          <div class="product-card-price">$485.00</div>
+        </a>
+
+        <a href="product.html" class="product-card reveal" data-category="body-wave" data-price="520" data-date="2026-04">
+          <div class="product-card-image img-zoom">
+            <img src="assets/images/product-body-wave.png" alt="The Riviera Wave">
+            <div class="product-card-overlay"><span class="btn btn-primary btn-sm">Quick View</span></div>
+          </div>
+          <div class="product-card-category">Body Wave</div>
+          <div class="product-card-name">The Riviera Wave</div>
+          <div class="product-card-price">$520.00</div>
+        </a>
+
+        <a href="product.html" class="product-card reveal" data-category="bob" data-price="395" data-date="2026-05">
+          <div class="product-card-image img-zoom">
+            <img src="assets/images/product-straight-bob.png" alt="The Parisian Bob">
+            <div class="product-card-overlay"><span class="btn btn-primary btn-sm">Quick View</span></div>
+          </div>
+          <span class="chip chip-new" style="margin-bottom: 6px;">New</span>
+          <div class="product-card-category">Bob</div>
+          <div class="product-card-name">The Parisian Bob</div>
+          <div class="product-card-price">$395.00</div>
+        </a>
+
+        <a href="product.html" class="product-card reveal" data-category="straight" data-price="450" data-date="2026-03">
+          <div class="product-card-image img-zoom">
+            <img src="assets/images/hero-main.png" alt="The Monaco Straight">
+            <div class="product-card-overlay"><span class="btn btn-primary btn-sm">Quick View</span></div>
+          </div>
+          <div class="product-card-category">Straight</div>
+          <div class="product-card-name">The Monaco Straight</div>
+          <div class="product-card-price">$450.00</div>
+        </a>
+
+        <a href="product.html" class="product-card reveal" data-category="lace-front" data-price="545" data-date="2026-03">
+          <div class="product-card-image img-zoom">
+            <img src="assets/images/lifestyle-editorial.png" alt="The Opulence Unit">
+            <div class="product-card-overlay"><span class="btn btn-primary btn-sm">Quick View</span></div>
+          </div>
+          <div class="product-card-category">Lace Front</div>
+          <div class="product-card-name">The Opulence Unit</div>
+          <div class="product-card-price">$545.00</div>
+        </a>
+
+        <a href="product.html" class="product-card reveal" data-category="body-wave" data-price="490" data-date="2026-02">
+          <div class="product-card-image img-zoom">
+            <img src="assets/images/product-body-wave.png" alt="The Côte d'Azur Wave">
+            <div class="product-card-overlay"><span class="btn btn-primary btn-sm">Quick View</span></div>
+          </div>
+          <div class="product-card-category">Body Wave</div>
+          <div class="product-card-name">The Côte d'Azur Wave</div>
+          <div class="product-card-price">$490.00</div>
+        </a>
+
+        <a href="product.html" class="product-card reveal" data-category="straight" data-price="420" data-date="2026-04">
+          <div class="product-card-image img-zoom">
+            <img src="assets/images/product-lace-front.png" alt="The Vienna Sleek">
+            <div class="product-card-overlay"><span class="btn btn-primary btn-sm">Quick View</span></div>
+          </div>
+          <div class="product-card-category">Straight</div>
+          <div class="product-card-name">The Vienna Sleek</div>
+          <div class="product-card-price">$420.00</div>
+        </a>
+
+        <a href="product.html" class="product-card reveal" data-category="bob" data-price="380" data-date="2026-01">
+          <div class="product-card-image img-zoom">
+            <img src="assets/images/product-straight-bob.png" alt="The Milano Bob">
+            <div class="product-card-overlay"><span class="btn btn-primary btn-sm">Quick View</span></div>
+          </div>
+          <div class="product-card-category">Bob</div>
+          <div class="product-card-name">The Milano Bob</div>
+          <div class="product-card-price">$380.00</div>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Maison Crème</div>
+          <p class="footer-brand-text">Luxury wigs and hairpieces, handcrafted with intention.</p>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-title">Shop</div>
+          <a href="collection.html">All Collections</a>
+          <a href="collection.html?cat=lace-front">Lace Fronts</a>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-title">Maison</div>
+          <a href="about.html">Our Process</a>
+          <a href="#">Wig Care Guide</a>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-title">Support</div>
+          <a href="#">Contact Us</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">&copy; 2026 Maison Crème. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header"><span class="cart-drawer-title">Shopping Bag</span><button id="cart-close">&times;</button></div>
+    <div class="cart-drawer-body" id="cart-drawer-body"><div class="cart-empty"><p class="headline-sm">Your bag is empty</p></div></div>
+    <div class="cart-drawer-footer" id="cart-drawer-footer" style="display:none;">
+      <div class="cart-subtotal"><span class="label-caps">Subtotal</span><span id="cart-subtotal-amount">$0.00</span></div>
+      <a href="checkout.html" class="btn btn-primary" style="width:100%;">Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    // ── Category Filtering ───────────────────────────
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const products = document.querySelectorAll('.product-card[data-category]');
+    const countEl = document.getElementById('product-count');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        let visible = 0;
+        products.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+            visible++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        if (countEl) countEl.textContent = `${visible} Product${visible !== 1 ? 's' : ''}`;
+      });
+    });
+
+    // ── Sorting ──────────────────────────────────────
+    const sortSelect = document.getElementById('sort-select');
+    const grid = document.getElementById('product-grid');
+    if (sortSelect && grid) {
+      sortSelect.addEventListener('change', () => {
+        const cards = [...grid.querySelectorAll('.product-card[data-category]')];
+        const sorted = cards.sort((a, b) => {
+          switch (sortSelect.value) {
+            case 'price-asc': return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+            case 'price-desc': return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+            case 'newest': return b.dataset.date.localeCompare(a.dataset.date);
+            default: return 0;
+          }
+        });
+        sorted.forEach(card => grid.appendChild(card));
+      });
+    }
+
+    // ── URL-based filter ─────────────────────────────
+    const urlParams = new URLSearchParams(window.location.search);
+    const cat = urlParams.get('cat');
+    if (cat) {
+      const targetBtn = document.querySelector(`.filter-btn[data-filter="${cat}"]`);
+      if (targetBtn) targetBtn.click();
+    }
+  </script>
+</body>
+</html>

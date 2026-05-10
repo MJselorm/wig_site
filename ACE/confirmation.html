@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed | MAISON CRÈME</title>
+  <meta name="description" content="Your order has been confirmed. Thank you for choosing MAISON CRÈME.">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages/confirmation.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">Maison <span>Crème</span></a>
+      <ul class="nav-links">
+        <li><a href="collection.html" class="nav-link">Collections</a></li>
+        <li><a href="about.html" class="nav-link">Our Process</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-action-btn" id="cart-btn" aria-label="Shopping bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cart-count" style="display:none;">0</span>
+        </button>
+        <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="collection.html">Collections</a>
+  </div>
+
+  <main class="main-content">
+    <div class="confirm-page animate-fade-in-up">
+
+      <!-- Success Icon -->
+      <div class="confirm-icon">✓</div>
+
+      <h1 class="confirm-title">Order Confirmed</h1>
+      <p class="confirm-subtitle">Thank you for your purchase. Your Maison Crème piece is being prepared with the same care and attention that went into crafting it.</p>
+
+      <!-- Order Details -->
+      <div class="confirm-details">
+        <div class="confirm-detail-row">
+          <span class="confirm-detail-label">Order Number</span>
+          <span class="confirm-detail-value">MC-2026-04892</span>
+        </div>
+        <div class="confirm-detail-row">
+          <span class="confirm-detail-label">Date</span>
+          <span class="confirm-detail-value">May 10, 2026</span>
+        </div>
+        <div class="confirm-detail-row">
+          <span class="confirm-detail-label">Item</span>
+          <span class="confirm-detail-value">The Silk Press Unit</span>
+        </div>
+        <div class="confirm-detail-row">
+          <span class="confirm-detail-label">Variant</span>
+          <span class="confirm-detail-value">18" / 150% / Natural Black</span>
+        </div>
+        <div class="confirm-detail-row">
+          <span class="confirm-detail-label">Total</span>
+          <span class="confirm-detail-value" style="color: var(--color-gold);">$527.44</span>
+        </div>
+      </div>
+
+      <!-- Shipping Timeline -->
+      <div class="confirm-timeline">
+        <div class="timeline-step">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">Confirmed</div>
+        </div>
+        <div class="timeline-connector"></div>
+        <div class="timeline-step">
+          <div class="timeline-dot pending"></div>
+          <div class="timeline-label">Preparing</div>
+        </div>
+        <div class="timeline-connector"></div>
+        <div class="timeline-step">
+          <div class="timeline-dot pending"></div>
+          <div class="timeline-label">Shipped</div>
+        </div>
+        <div class="timeline-connector"></div>
+        <div class="timeline-step">
+          <div class="timeline-dot pending"></div>
+          <div class="timeline-label">Delivered</div>
+        </div>
+      </div>
+
+      <p style="font-size: 14px; color: var(--color-grey-dark); margin-bottom: var(--space-lg); max-width: 400px;">
+        A confirmation email has been sent to your inbox. Estimated delivery: <strong>5-7 business days</strong>.
+      </p>
+
+      <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; justify-content: center;">
+        <a href="collection.html" class="btn btn-primary">Continue Shopping</a>
+        <a href="index.html" class="btn btn-secondary">Return Home</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom" style="border: none; padding: var(--space-md) 0;">
+        <span class="footer-copyright">&copy; 2026 Maison Crème. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header"><span class="cart-drawer-title">Shopping Bag</span><button id="cart-close">&times;</button></div>
+    <div class="cart-drawer-body" id="cart-drawer-body"><div class="cart-empty"><p class="headline-sm">Your bag is empty</p></div></div>
+    <div class="cart-drawer-footer" id="cart-drawer-footer" style="display:none;">
+      <div class="cart-subtotal"><span class="label-caps">Subtotal</span><span id="cart-subtotal-amount">$0.00</span></div>
+      <a href="checkout.html" class="btn btn-primary" style="width:100%;">Proceed to Checkout</a>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
