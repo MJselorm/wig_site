@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Route</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="container">
+        <div class="auth-card glassmorphism">
+            <div class="hero-panel">
+                <div class="brand-badge">ROUTE</div>
+                <h1>Welcome to Route</h1>
+                <p>Fast, friendly sign in for your voting community. Create polls, join discussions, and stay connected.
+                </p>
+
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <span>•</span>
+                        <div>
+                            <strong>Fast access</strong>
+                            <p>Quick login and instant access to polls.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span>•</span>
+                        <div>
+                            <strong>Secure by design</strong>
+                            <p>Safe voting with modern authentication.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span>•</span>
+                        <div>
+                            <strong>Community ready</strong>
+                            <p>Built for teams, classrooms, and groups.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-panel">
+                <div class="auth-header">
+                    <h2 id="auth-title">Sign in to Route</h2>
+                    <p id="auth-subtitle">Enter your email and password to continue.</p>
+                </div>
+
+                <form id="auth-form">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required placeholder="Enter your password">
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="auth-submit-btn">Sign In</button>
+                </form>
+
+                <p class="text-center toggle-text" id="toggle-auth-mode">
+                    Don't have an account? <span>Sign up</span>
+                </p>
+
+                <p id="error-message" class="error-message"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
